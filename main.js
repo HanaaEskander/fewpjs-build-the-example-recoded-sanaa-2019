@@ -6,11 +6,11 @@ const FULL_HEART = '♥'
 
 let like = document.querySelector('.like-glyph');
 let model = document.getElementById('modal');
-let msg = document.getElementById('modal-message');
+let mm = document.getElementById('modal-message');
 let liked;
-like.forEach(function(e){
-  e.addEventListener('click',mimicServerCall);
-  liked = e;
+like.forEach(function(clicked){
+  clicked.addEventListener('click',mimicServerCall);
+  liked = clicked;
 });
 
 
